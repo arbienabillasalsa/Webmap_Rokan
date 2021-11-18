@@ -268,7 +268,7 @@ var addMarkers = function(data) {
  */
 var loadData = function(loc) {
 
-  Papa.parse(loc, {
+  Papa.parse('https://raw.githubusercontent.com/arbienabillasalsa/Webmap_Rokan/main/data/KPH_Rokan.csv', {
     header: true,
     download: true,
     complete: function(results) {
